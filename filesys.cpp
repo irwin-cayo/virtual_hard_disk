@@ -98,7 +98,7 @@ filesys::filesys(string diskName, int numberOfBlocks, int blockSize): Sdisk(disk
 	        getBlock(1, buffer1);  //get root into buffer1
 	        for (int i = 0; i < fatsize; i++) {                                 
 	            getBlock(2 + i, temp);        //FAT into temp
-	            buffer2 += temp;              //entire FAT into buffer2
+	            buffer2 += temp;              //entire FAT into buffer2 
 	        } 
 	        istringstream ibuffer1;
 	        istringstream ibuffer2;
